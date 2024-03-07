@@ -5,16 +5,19 @@ import { useState } from "react";
 
 function App() {
   const [place, setPlace] = useState<Place | null>(null);
-  console.log(place);
+  
   // const handlePlaceClick = (p: Place) => {
   //   setPlace(p);
   // };
 
   return (
-    <div>
-      <p>Hello</p>
-      <LocationSearch onPlaceClick={(p) => setPlace(p)} />
-      <Map place={place} />
+    <div className="h-screen w-screen grid grid-cols-12">
+      <div className="col-span-3 p-2">
+        <LocationSearch onPlaceClick={(p) => setPlace(p)} />
+      </div>
+      <div className="col-span-9">
+        <Map place={place} />
+      </div>
     </div>
   );
 }

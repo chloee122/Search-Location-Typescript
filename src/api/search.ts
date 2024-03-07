@@ -21,7 +21,7 @@ export const  search = async (term:string) => {
             id: place.properties.place_id,
             name: place.properties.display_name,
             longitude: place.geometry.coordinates[0],
-            lahtitude: place.geometry.coordinates[1]
+            latitude: place.geometry.coordinates[1]
         }
     })
 

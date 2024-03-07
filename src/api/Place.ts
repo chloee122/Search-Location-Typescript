@@ -2,7 +2,7 @@ interface Place{
     id: number,
     name: string,
     longitude: number,
-    lahtitude: number
+    latitude: number
 }
 
 export default Place
