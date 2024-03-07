@@ -12,6 +12,7 @@ function App() {
 
   return (
     <div>
+      <p>Hello</p>
       <LocationSearch onPlaceClick={(p) => setPlace(p)} />
       <Map place={place} />
     </div>
